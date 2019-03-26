@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mernashenda.uangsaya">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logous"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logous_rounded"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PinActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".KodeUnikActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nikActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register"
+            android:theme="@style/MyMaterialTheme.Base" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PengeluaranActivity"
+            android:label="Pengeluaran" />
+        <activity
+            android:name=".KasActivity"
+            android:label="Kas/Bank" />
+        <activity
+            android:name=".KategoriActivity"
+            android:label="@string/title_activity_kategori"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".TambahAkunActivity"
+            android:label="Tambah Akun" />
+        <activity
+            android:name=".DeveloperActivity"
+            android:label="Tentang Pengembang" />
+        <activity android:name=".TambahPengeluaranActivity"
+            android:label="Add Transaksi"></activity>
+    </application>
+
+</manifest>

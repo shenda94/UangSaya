@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Uang Saya</string>
+    <string name="action_exit">Exit</string>
+    <string name="font_fontFamily_medium">sans-serif</string>
+    <string name="action_search"><S></S>earch</string>
+    <string name="action_delete">Delete</string>
+    <string name="title_activity_kategori">Kategori</string>
+
+    <string-array name="pilihandata" translatable="false">
+        <item>Kas</item>
+        <item>Bank</item>
+    </string-array>
+
+    <string-array name="pilihandatastatus" translatable="false">
+        <item>Default</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="cmbjenistr" translatable="false">
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+    </string-array>
+
+    <string name="simpankategori">Simpan</string>
+    <string name="keluarkategori">Keluar</string>
+    <string name="type_to_search">Type to Search</string>
+
+</resources>

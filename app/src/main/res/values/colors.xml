@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary2">#4caf50</color>
+    <color name="colorPrimaryDark2">#087f23</color>
+    <color name="colorAccent2">#4fa881</color>
+
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#80e27e</color>
+
+    <color name="colorText">#000000</color>
+    <color name="navdrawer_background">#FFFFFF</color>
+    <color name="colorMainDark">#01579b</color>
+    <color name="row_activated">#e0e0e0</color>
+    <color name="colorMain">#0277bd</color>
+    <color name="colorMainAccent">#e8eaf6</color>
+    <color name="colorMainBg">#FAFAFA</color>
+    <color name="bg_row_background">#fa315b</color>
+    <color name="from">#000000</color>
+    <color name="subject">#111111</color>
+    <color name="timestamp">#4285f4</color>
+    <color name="message">#7a7a7a</color>
+    <color name="icon_tint_normal">#7a7a7a</color>
+    <color name="list_even">#FFFFFF</color>
+    <color name="list_odd">#FFFFFF</color>
+    <color name="list_selected">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="red">#ff00</color>
+</resources>

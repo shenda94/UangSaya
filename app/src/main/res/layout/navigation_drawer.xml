@@ -1,0 +1,517 @@
+<ScrimInsetsFrameLayout.ScrimInsetsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/navdrawer_width"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:id="@+id/navdrawer"
+    android:background="@color/navdrawer_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:weightSum="1"
+    android:elevation="10dp"
+    app:insetForeground="#4000">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navDrawerScrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/navDrawerLayout">
+
+            <!-- Image Header-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:background="@drawable/navigation_drawer_bg"
+                android:gravity="left|center"
+                android:id="@+id/ltDrawerHeader">
+
+                <ImageView
+                    android:id="@+id/img_profile"
+                    android:layout_gravity="left"
+                    android:layout_width="@dimen/profile_width"
+                    android:layout_height="@dimen/profile_height"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgDrawerHeader"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/navigation_drawer_bg"
+                    android:text="username"
+                    android:gravity="left"
+                    android:textSize="15dp"
+                    android:textColor="#ffffff"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="16dp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginBottom="5dp" />
+
+                <!-- Slogan -->
+                <TextView
+                    android:id="@+id/txtNavSlogan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18dp"
+                    android:paddingLeft="16dp"
+                    android:text="Saldo Rp"
+                    android:textColor="#E9E9E9"
+                    android:gravity="left"
+                     />
+
+                <TextView
+                    android:id="@+id/txtNavakun"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="16dp"
+                    android:text="Akun Default"
+                    android:textColor="#E9E9E9"
+                    android:textSize="15dp"
+                    android:gravity="left"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#888" />
+
+            <!-- Button -->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/txtNavButtonBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/txtNavButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/txtNavButtonImage"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_home_black_24dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:background="@android:color/transparent"
+                        android:text="Home"
+                        android:textStyle="bold"
+                        android:singleLine="false"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="sans-serif"
+                        android:focusable="false"
+                        android:elegantTextHeight="false"
+                        android:editable="false"
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="25dp" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/txtNavButton10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/txtNavButtonImage10"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_person_black_24dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:background="@android:color/transparent"
+                        android:text="Profile"
+                        android:textStyle="bold"
+                        android:singleLine="false"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="sans-serif"
+                        android:focusable="false"
+                        android:elegantTextHeight="false"
+                        android:editable="false"
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="25dp" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/txtNavButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/txtNavButtonImage1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_account_balance_wallet_black_24dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:background="@android:color/transparent"
+                        android:text="Kas/Bank"
+                        android:textStyle="bold"
+                        android:singleLine="false"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="sans-serif"
+                        android:focusable="false"
+                        android:elegantTextHeight="false"
+                        android:editable="false"
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="25dp" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/txtNavButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/txtNavButtonImage2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_folder_black_24dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:background="@android:color/transparent"
+                        android:text="Kategori"
+                        android:textStyle="bold"
+                        android:singleLine="false"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="sans-serif"
+                        android:focusable="false"
+                        android:elegantTextHeight="false"
+                        android:editable="false"
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="25dp" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/txtNavButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/txtNavButtonImage3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_add_black_24dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:background="@android:color/transparent"
+                        android:text="Pemasukan"
+                        android:textStyle="bold"
+                        android:singleLine="false"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="sans-serif"
+                        android:focusable="false"
+                        android:elegantTextHeight="false"
+                        android:editable="false"
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="25dp" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/txtNavButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/txtNavButtonImage4"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_remove_black_24dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:background="@android:color/transparent"
+                        android:text="Pengeluaran"
+                        android:textStyle="bold"
+                        android:singleLine="false"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="sans-serif"
+                        android:focusable="false"
+                        android:elegantTextHeight="false"
+                        android:editable="false"
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="25dp" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/txtNavButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/txtNavButtonImage5"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_people_black_24dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:background="@android:color/transparent"
+                        android:text="Pinjaman"
+                        android:textStyle="bold"
+                        android:singleLine="false"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="sans-serif"
+                        android:focusable="false"
+                        android:elegantTextHeight="false"
+                        android:editable="false"
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="25dp" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/txtNavButton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/txtNavButtonImage6"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_swap_horiz_black_24dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:background="@android:color/transparent"
+                        android:text="Transfer Dana"
+                        android:textStyle="bold"
+                        android:singleLine="false"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="sans-serif"
+                        android:focusable="false"
+                        android:elegantTextHeight="false"
+                        android:editable="false"
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="25dp" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/txtNavButton7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/txtNavButtonImage7"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_event_note_black_24dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:background="@android:color/transparent"
+                        android:text="Catat Cicilan"
+                        android:textStyle="bold"
+                        android:singleLine="false"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="sans-serif"
+                        android:focusable="false"
+                        android:elegantTextHeight="false"
+                        android:editable="false"
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="25dp" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/txtNavButton8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/txtNavButtonImage8"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_account_balance_black_24dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:background="@android:color/transparent"
+                        android:text="Laporan"
+                        android:textStyle="bold"
+                        android:singleLine="false"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="sans-serif"
+                        android:focusable="false"
+                        android:elegantTextHeight="false"
+                        android:editable="false"
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="25dp" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/txtNavButton9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/txtNavButtonImage9"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_person_pin_black_24dp"
+                        android:layout_marginRight="0dp" />
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:background="@android:color/transparent"
+                        android:text="Pengembang"
+                        android:textStyle="bold"
+                        android:singleLine="false"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="sans-serif"
+                        android:focusable="false"
+                        android:elegantTextHeight="false"
+                        android:editable="false"
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="25dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</ScrimInsetsFrameLayout.ScrimInsetsFrameLayout>
